@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# Build
+frontend/dist/
+backend/coverage/
+
+# Env
+.env
+backend/.env
+frontend/.env
+docker/.env
+
+# Misc
+.DS_Store
+*.log

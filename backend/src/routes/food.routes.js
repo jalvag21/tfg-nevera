@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import auth from '../middlewares/auth.js';
+import { listFoods, createFood, updateFood, deleteFood } from '../controllers/food.controller.js';
+const r = Router();
+r.use(auth);
+r.get('/', listFoods);
+r.post('/', createFood);
+r.patch('/:id', updateFood);
+r.delete('/:id', deleteFood);
+export default r;
